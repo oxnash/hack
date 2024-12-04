@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FBCAFF 22.92%, rgba(59, 207, 239, 0.88) 49.48%, #6459A7 100%);    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;    
+}
+
+header {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    height: 5em;
+    width: 100%;
+    background: #6459A7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header ul {
+    margin: 0em;
+    padding: 0em;
+    list-style-type: none;
+}
+
+header ul li {
+    padding: 1em;
+    display: inline-block;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+header ul ul{
+    position: fixed;
+    background: rgb(255, 255, 255);
+    transform: translateX(-0.5em);
+    border-radius: 1em;
+}
+
+header ul ul li{
+    display: block;
+}
+
+header ul ul li a{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+.groups-navbar, .profile-navbar, .this-group-navbar{
+    height: 0em;
+    overflow: hidden;
+    opacity: 0.9;
+    transition: height ease-out 300ms;
+}
+
+header li:hover .groups-navbar{
+    height: 3.4em;
+}
+
+.groups-navbar li, .profile-navbar li, .this-group-navbar li{
+    transition: background ease-out 400ms;
+}
+
+.groups-navbar li:hover, .profile-navbar li:hover, .this-group-navbar li:hover{
+    background: rgb(187, 187, 187);
+}
+
+header li:hover .profile-navbar{
+    height: 6.8em;
+}
+
+header li:hover .this-group-navbar{
+    height: 13.5em;
+}
+
+.nothing {
+    position: relative;
+    height: 5em;
+    width: 100%;
+}
+
+footer{
+    position: relative;
+    height: 7em;
+    width: 100%;
+    /*background: rgb(0, 0, 0, 0.8);*/
+    background: #6459A7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.link{
+    padding: 0em;
+    list-style-type: none;
+}
+
+.link li{
+    display: inline;
+    padding: 1em;
+    color: #fff;
+}
+
+.link li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main{
+    position: relative;
+    min-height: 90vh;
+    height: auto;
+    width: 100%;
+}
+
+.logo{
+    height: 60px;
+}
+
+.title{
+    text-align: center;
+}
+
+.user{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        flex-direction: column;
+        height: 10em;
+    }
+    .nothing {
+        height: 10em;
+    }
+}
+
+#transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}

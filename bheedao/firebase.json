@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+      "source": "/dona",
+      "destination": "/instructions-gitcoin-it.html",
+      "type": 302      
+    }
+    ]
+  }
+}

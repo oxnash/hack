@@ -1,0 +1,7 @@
+.env
+.env.test
+metamask.dev
+node_modules
+secret*
+.secret*
+.firebase/
